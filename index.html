@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+
+<title>One Time Pad</title>
+
+<script type="text/javascript" src="onetimepad.js"></script>
+
+<style>
+
+body {
+	text-align:center;
+	font-family: OpenSans, Arial, sans-serif;
+}
+
+#main {
+	margin:50px auto;
+	max-width:500px;
+	padding:25px;
+	border-radius:5px;
+	border:1px solid lightgrey;
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="main">
+	
+	<p>One-time pad simulator using JS</p>
+	If key is same length as message, 
+	will encrypt using the key. Otherwise generates a new key. 
+	If you encrypt using the cipher and the corresponding key, 
+	the algorithm will decrypt the cipher into the message.
+	
+	<p>
+		<strong>Msg: </strong>
+		<input id="message"></input>
+	</p>
+	
+	<p>
+		<strong>Key: </strong>
+		<input id="key"></input>
+	</p>
+	
+	<p>
+		<button onclick="javascript:generate();">Encode</button>
+	</p>
+	
+	<h4>Ciphertext:</h4>
+	<div id="cipher"></div>
+
+	</div>
+
+</body>
+
+</html>

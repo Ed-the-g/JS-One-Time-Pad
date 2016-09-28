@@ -56,7 +56,13 @@ function generate() {
 
 	var key = document.getElementById("key").value;
 
-	// If the key length is not the same as the message, re-generate the key
+	// If key length is longer than the message, concat the key
+	if(msg.length < key.length) {
+		key = key.substring(0,msg.length);
+		document.getElementById("key").value = key;
+	}
+
+	// If the key length is shorter than the message, re-generate the key
 	if(msg.length != key.length) {
 		key = OneTimePad.gen(msg.length);
 		document.getElementById("key").value = key;

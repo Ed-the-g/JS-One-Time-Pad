@@ -1,59 +1,50 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 
 <title>One Time Pad</title>
 
-<script type="text/javascript" src="onetimepad.js"></script>
-
-<style>
-
-body {
-	text-align:center;
-	font-family: OpenSans, Arial, sans-serif;
-}
-
-#main {
-	margin:50px auto;
-	max-width:500px;
-	padding:25px;
-	border-radius:5px;
-	border:1px solid lightgrey;
-}
-
-</style>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
 <body>
 
+	<header>
+		<h1>One-Time Pad</h1>
+	</header>
+
 	<div id="main">
-	
-	<p>One-time pad simulator using JS</p>
-	If key is same length as message, 
-	will encrypt using the key. Otherwise generates a new key. 
-	If you encrypt using the cipher and the corresponding key, 
-	the algorithm will decrypt the cipher into the message.
-	
-	<p>
-		<strong>Msg: </strong>
-		<input id="message"></input>
-	</p>
-	
-	<p>
-		<strong>Key: </strong>
-		<input id="key"></input>
-	</p>
-	
-	<p>
-		<button onclick="javascript:generate();">Encode</button>
-	</p>
-	
-	<h4>Ciphertext:</h4>
-	<div id="cipher"></div>
+
+		<div id="main-view">
+
+			<div class="padding-wrapper">
+				<textarea id="message" class="halfarea" placeholder="Enter Your Message/Cipher Here"></textarea>
+				<textarea id="key" class="halfarea" placeholder="Enter Your Key or Leave Blank to Generate a New Key"></textarea>
+				<span class="xor"><br/>&#8853;</span>
+			</div>
+			<div class="clear"></div>
+
+			<div class="text-center padding-wrapper">
+				<button id="encode-button" onclick="javascript:generate();">Encode/Decode</button>
+			</div>
+
+			<div class="padding-wrapper">
+				<textarea id="cipher" class="wholearea" placeholder="Cipher/Decrypted Message"></textarea>
+			</div>
+		</div>
+
+		<div id="about-view">
+			If key is same length as message, will encrypt using the key.
+			Otherwise generates a new key. If you encrypt using the cipher
+			and the corresponding key, the algorithm will decrypt
+			the cipher into the message.
+		</div>
 
 	</div>
 
+	<script type="text/javascript" src="onetimepad.js"></script>
 </body>
 
 </html>

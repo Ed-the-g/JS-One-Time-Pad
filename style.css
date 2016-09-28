@@ -1,0 +1,98 @@
+body {
+	background:#0d0d0d;
+	font-family: Verdana, Arial, sans-serif;
+	color:whitesmoke;
+	width:100%;
+	margin:0;
+	padding-bottom:15px;
+}
+
+header {
+	margin:15px 30px;
+}
+
+h1 {
+	max-width:500px;
+	padding-bottom:10px;
+	border-bottom: 1px solid darkgrey;
+
+	font-family: 'Lato-Hairline', Lato, Helvetica, sans-serif;
+	font-weight:100;
+	font-size:3.5em;
+	color: #b9daff;
+}
+
+#main {
+	padding:0 30px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+textarea {
+	resize:none;
+	box-sizing: border-box;
+	position:relative;
+	height:175px;
+	border:1px solid #777;
+	background: #222;
+	margin:0;
+	color:whitesmoke;
+	font-size:1.2em;
+	font-family:Lato, monospace;
+	padding:5px;
+}
+
+textarea.halfarea {
+	width:45%;
+}
+
+textarea.wholearea {
+	width:100%;
+}
+
+#message {
+	float:left;
+}
+
+#key {
+	float:right;
+}
+
+.xor {
+	font-family: times, sans-serif;
+	font-size:2.5em;
+	color:#a6ced1;
+}
+
+.xor br {
+	line-height:60px;
+}
+
+.clear {
+	clear:both;
+}
+
+.padding-wrapper {
+	padding:0 15px;
+	text-align:center;
+}
+
+.text-center {
+	text-align:center;
+}
+
+#encode-button {
+	margin: 15px auto;
+	padding: 10px;
+	background: #222222;
+	color: #afcef2;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	font-family: 'Lato-Hairline', 'Lato', Verdana, sans-serif;
+	font-size: 1.5em;
+	font-weight:100;
+}
+
+#about-view {
+	display:none;
+}

@@ -14,7 +14,7 @@ var OneTimePad = {
 		var key = "";
 
 		for(var i=0;i<length;i++) {
-			key = key.concat(String.fromCharCode(Math.floor(Math.random()*26) + 65));
+			key = key.concat(String.fromCharCode(Math.floor(Math.random()*52) + 65));
 		}
 
 		return key;
@@ -25,9 +25,7 @@ var OneTimePad = {
 
 		if(key.length != message.length) return false;
 
-		message = message.toUpperCase();
-		key = key.toUpperCase();
-
+		
 		var cipher = "";
 		for(var i=0;i<message.length;i++) {
 

@@ -1,7 +1,7 @@
 body {
-	background:#0d0d0d;
+	background:#000000;
 	font-family: Verdana, Arial, sans-serif;
-	color:whitesmoke;
+	color:white;
 	width:100%;
 	margin:0;
 	padding-bottom:15px;
@@ -16,7 +16,7 @@ h1 {
 	padding-bottom:10px;
 	border-bottom: 1px solid darkgrey;
 
-	font-family: 'Lato-Hairline', Lato, Helvetica, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
 	font-weight:100;
 	font-size:3.5em;
 	color: #b9daff;

@@ -14,7 +14,7 @@ var OneTimePad = {
 		var key = "";
 
 		for(var i=0;i<length;i++) {
-			key = key.concat(String.fromCharCode(Math.floor(Math.random()*52) + 65));
+			key = key.concat(String.fromCharCode(Math.floor(Math.random()*95) + 32));
 		}
 
 		return key;
@@ -25,12 +25,12 @@ var OneTimePad = {
 
 		if(key.length != message.length) return false;
 
-		
+
 		var cipher = "";
 		for(var i=0;i<message.length;i++) {
 
 			// XOR each character together and build cipher
-			var code = ((key.charCodeAt(i)-65) ^ (message.charCodeAt(i)-65)) + 65;
+			var code = ((key.charCodeAt(i)-32) ^ (message.charCodeAt(i)-32)) + 32;
 			cipher = cipher.concat(String.fromCharCode(code));
 
 		}
@@ -50,7 +50,7 @@ var OneTimePad = {
 function generate() {
 
 	var msg = document.getElementById("message").value;
-	document.getElementById("message").value = msg.toUpperCase();
+	document.getElementById("message").value = msg;
 
 	var key = document.getElementById("key").value;
 
@@ -71,5 +71,20 @@ function generate() {
 	if(cipher) {
 		document.getElementById("cipher").value = cipher;
 	}
+
+}
+// clean data
+function clean() {
+
+	var msg = document.getElementById("message").value;
+	document.getElementById("message").value = '';
+
+	var key = document.getElementById("key").value;
+  document.getElementById("key").value = '';
+
+  var key = document.getElementById("cipher").value;
+  document.getElementById("cipher").value = '';
+
+
 
 }

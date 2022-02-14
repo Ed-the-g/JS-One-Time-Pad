@@ -20,19 +20,18 @@
 		<div id="main-view">
 
 			<div class="padding-wrapper">
-				<textarea id="message" class="halfarea" placeholder="Enter Your Message/Cipher Here"></textarea>
-				<textarea id="key" class="halfarea" placeholder="Enter Your Key or Leave Blank to Generate a New Key"></textarea>
-				<span class="xor"><br/>&#8853;</span>
+				<textarea id="message" class="thirdarea" placeholder="Enter Your Message/Cipher Here"></textarea>
+				<textarea id="key" class="thirdarea" placeholder="Enter Your Key or Leave Blank to Generate a New Key"></textarea>
+				<textarea id="cipher" class="thirdarea" placeholder="Cipher/Decrypted Message"></textarea>
 			</div>
 			<div class="clear"></div>
 
-			<div class="text-center padding-wrapper">
-				<button id="encode-button" onclick="javascript:generate();">Encode/Decode</button>
+			<div class="padding-wrapper">
+				<button id="encode-button" class="halfarea" onclick="javascript:generate();">Encode/Decode</button>
+
+				<button id="clear-button" class="halfarea" onclick="javascript:clean();">clear</button>
 			</div>
 
-			<div class="padding-wrapper">
-				<textarea id="cipher" class="wholearea" placeholder="Cipher/Decrypted Message"></textarea>
-			</div>
 		</div>
 
 		<div id="about-view">

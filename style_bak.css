@@ -8,49 +8,43 @@ body {
 }
 
 header {
-	margin:5px;
-		padding-bottom:5px;
+	margin:5px 5px;
 }
 
 h1 {
-	margin: 10px auto;
+	max-width:500px;
 	padding-bottom:5px;
 	border-bottom: 1px solid white;
 
 	font-family: Verdana, Arial, sans-serif;
 	font-weight:100;
-	font-size:2.0em;
+	font-size:2.5em;
 	color: #fff;
 }
 
 #main {
-
+	padding:0 5px;
 	width:100%;
 	box-sizing:border-box;
 }
 
 textarea {
-	padding:5px;
-	margin: 10px auto;
 	resize:none;
 	box-sizing: border-box;
 	position:relative;
-	height:200px;
+	height:175px;
 	border:1px solid #fff;
-	border-radius: 7px;
+	border-radius: 5px;
 	background: #000;
 	margin:0;
 	color:white;
-	font-size:2.0em;
+	font-size:1.2em;
 	font-family:Lato, monospace;
-
+	padding:5px;
 }
 
-textarea.thirdarea {
-	width:33%;
-}
 textarea.halfarea {
-	width:50%;
+	width:45%;
 }
 
 textarea.wholearea {
@@ -62,12 +56,9 @@ textarea.wholearea {
 }
 
 #key {
-	float:center;
-}
-
-#cipher {
 	float:right;
 }
+
 .xor {
 	font-family: times, sans-serif;
 	font-size:2.5em;
@@ -83,7 +74,7 @@ textarea.wholearea {
 }
 
 .padding-wrapper {
-
+	padding:0 5px;
 	text-align:center;
 }
 
@@ -92,28 +83,26 @@ textarea.wholearea {
 }
 
 #encode-button {
-	padding:5px;
 	margin: 10px auto;
+	padding: 10px;
 	background: #000;
 	color: #fff;
 	border: 1px solid white;
-	border-radius: 7px;
+	border-radius: 5px;
 	font-family: 'Lato-Hairline', 'Lato', Verdana, sans-serif;
 	font-size: 2.0em;
 	font-weight:100;
-	width:100%;
 }
 #clear-button {
-	padding:5px;
 	margin: 10px auto;
+	padding: 10px;
 	background: #000;
 	color: #fff;
 	border: 1px solid white;
-	border-radius: 7px;
+	border-radius: 5px;
 	font-family: 'Lato-Hairline', 'Lato', Verdana, sans-serif;
 	font-size: 2.0em;
 	font-weight:100;
-	width:100%;
 }
 
 #about-view {

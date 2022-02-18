@@ -42,7 +42,7 @@ textarea {
 	margin:0;
 	color:yellow;
 	font-size:2.0em;
-	font-family: monospace;
+	font-family: Lucida Sans Unicode;
 }
 
 textarea.thirdarea {
@@ -67,15 +67,6 @@ textarea.wholearea {
 #cipher {
 	float:right;
 }
-.xor {
-	font-family: times, sans-serif;
-	font-size:2.5em;
-	color:#000;
-}
-
-.xor br {
-	line-height:60px;
-}
 
 .clear {
 	clear:both;
@@ -97,7 +88,7 @@ textarea.wholearea {
 	color: #fff;
 	border: 1px solid white;
 	border-radius: 7px;
-	font-family: 'Lato-Hairline', 'Lato', Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 2.0em;
 	font-weight:100;
 	width:100%;
@@ -109,7 +100,7 @@ textarea.wholearea {
 	color: #fff;
 	border: 1px solid white;
 	border-radius: 7px;
-	font-family: 'Lato-Hairline', 'Lato', Verdana, sans-serif;
+	font-family: Verdana, sans-serif;
 	font-size: 2.0em;
 	font-weight:100;
 	width:100%;

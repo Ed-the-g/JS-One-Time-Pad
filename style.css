@@ -1,6 +1,6 @@
 body {
 	background:#000000;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Lucida Console", "Courier New", monospace;
 	color:white;
 	width:100%;
 	margin:0;
@@ -17,7 +17,7 @@ h1 {
 	padding-bottom:5px;
 	border-bottom: 1px solid white;
 
-	font-family: font-family: "Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 	font-weight:100;
 	font-size:2.0em;
 	color: #fff;
@@ -42,7 +42,7 @@ textarea {
 	margin:0;
 	color:white;
 	font-size:2.0em;
-	font-family: Lucida Sans Unicode;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 textarea.thirdarea {

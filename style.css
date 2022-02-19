@@ -86,8 +86,7 @@ textarea.wholearea {
 #encode-button {
 	padding:5px;
 	margin: 10px auto;
-	background: #000;
-	color: #fff;
+	
 	border: 1px solid white;
 	border-radius: 7px;
 	font-family: Verdana, sans-serif;
@@ -98,8 +97,6 @@ textarea.wholearea {
 #clear-button {
 	padding:5px;
 	margin: 10px auto;
-	background: #000;
-	color: #fff;
 	border: 1px solid white;
 	border-radius: 7px;
 	font-family: Verdana, sans-serif;

@@ -1,10 +1,17 @@
 body {
+	background-color: white ;
+  	color: black ;
 	background:#000000;
 	font-family: "Lucida Console", "Courier New", monospace;
 	color:white;
 	width:100%;
 	margin:0;
 	padding-bottom:5px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -20,7 +27,6 @@ h1 {
 	font-family: "Times New Roman", Times, serif;
 	font-weight:100;
 	font-size:2.0em;
-	color: #fff;
 }
 
 #main {
